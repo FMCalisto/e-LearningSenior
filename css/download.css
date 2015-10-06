@@ -83,6 +83,7 @@ h1 {
   transform-origin: top center;
 }
 
+/*
 .meter {
   background: #C41564;
   overflow: hidden;
@@ -118,6 +119,7 @@ h1 {
   background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.15) 10%, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0.15) 20%, rgba(0, 0, 0, 0.15) 30%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.15) 40%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.15) 60%, rgba(0, 0, 0, 0.15) 70%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 0.15) 80%, rgba(0, 0, 0, 0.15) 90%, rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0.2));
   transition: 4s linear all;
 }
+*/
 
 .icon-wrap {
   position: absolute;
