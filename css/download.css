@@ -177,3 +177,20 @@ h1 {
     color: rgba(255, 255, 255, 0.5);
   }
 }
+
+@-webkit-@keyframes icon-bounce {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@-webkit-@keyframes white-pulse {
+  from {
+    color: rgba(255, 255, 255, 0.2);
+  }
+  to {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
