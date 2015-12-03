@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 /*
 |--------------------------------------------------------------------------
 | Application Developed Routes
@@ -24,7 +25,7 @@ Route::get('/', function () {
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'IndexController@index');
 
 Route::get('home', 'MenuController@home');
 
@@ -35,6 +36,28 @@ Route::get('profile', 'MenuController@profile');
 Route::get('about', 'MenuController@about');
 
 Route::get('help', 'MenuController@help');
+
+
+/*
+|--------------------------------------------------------------------------
+| Courses Developed Routes
+|--------------------------------------------------------------------------
+|
+| @author: Francisco Maria Calisto
+|
+*/
+
+Route::get('courses', 'CoursesController@index');
+Route::get('courses/{id}', 'CoursesController@show');
+
+/*
+|--------------------------------------------------------------------------
+| Auth Routes
+|--------------------------------------------------------------------------
+|
+| @author: Francisco Maria Calisto
+|
+*/
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

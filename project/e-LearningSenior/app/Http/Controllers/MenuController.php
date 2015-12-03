@@ -1,50 +1,38 @@
-<?php namespace App\Http\Controllers;
+<?php
 
-class MenuController extends Controller {
+namespace App\Http\Controllers;
 
-	/*
-	|--------------------------------------------------------------------------
-	| Welcome Controller
-	|--------------------------------------------------------------------------
-	|
-	| @author: Francisco Maria Calisto
-	|
-	*/
+use Illuminate\Http\Request;
 
-	/**
-	 * Show the application welcome screen to the user.
-	 *
-	 * @return Response
-	 */
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
 
-	public function home() {
-		//return "Index";
+class MenuController extends Controller
+{
+    
+    public function home()
+    {
+    	return view('menu.home');
+    }
 
-		return view('menu.home');
-	}
+    public function courses()
+    {
+    	return view('menu.courses');
+    }
 
-	public function courses() {
-		//return "Cursos";
+    public function profile()
+    {
+    	return view('menu.profile');
+    }
 
-		return view('menu.courses');
-	}
+    public function about()
+    {
+    	return view('menu.about');
+    }
 
-	public function profile() {
-		//return "Profile";
-
-		return view('menu.profile');
-	}
-
-	public function about() {
-		//return "About";
-
-		return view('menu.about');
-	}
-
-	public function help() {
-		//return "Help";
-
-		return view('menu.help');
-	}
+    public function help()
+    {
+    	return view('menu.help');
+    }
 
 }
