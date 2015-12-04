@@ -13,4 +13,8 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.sass('app.scss');
+    // .publish(
+    // 	'angular/angular.min.js',
+    // 	'public/js/vendor/angular.js'
+    // );
 });

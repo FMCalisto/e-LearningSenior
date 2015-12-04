@@ -144,6 +144,12 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\ViewComposerServiceProvider::class,
+
+        /*
+         * Laravel Service Providers...
+         */
+        // Laravel\Flash\FlashServiceProvider::class,
 
     ],
 

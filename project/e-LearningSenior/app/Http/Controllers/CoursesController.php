@@ -34,23 +34,27 @@ class CoursesController extends Controller
     	return view('courses.show')->with('course', $course);
     }
 
-    // public function create()
-    // {
+    public function create()
+    {
+
+        $tage = Tag::lists('name', 'id');
 
         
-    //     if(Auth::guest())
-    //     {
-    //         return redirect('courses');
-    //     }
+        if(Auth::guest())
+        {
+            return redirect('courses');
+        }
         
 
-    //     return view('courses.create'); // FIXME
+        return view('courses.create')->with('tags', $tags); // FIXME
     
-    // }
+    }
 
     public function store(CreateCourseRequest $request)
     {
         // validation
+
+        // dd($request->input('tags'));
 
         // $course = new Course($request->all());
 
@@ -58,11 +62,15 @@ class CoursesController extends Controller
 
         // Auth::user()->course()->save($course);
 
-        Auth::user()->course()->create($request->all());
+        $course = Auth::user()->course()->create($request->all());
 
-        \Session::flash('flash_message', 'Your course is ok!!!');
+        $tagIDs = $request->input;
 
-        return redirect('courses');
+        $course->$tags->attach($request->input('tags'));
+
+        flash('Your course is ok!!!');
+
+        return redirect('courses')->with('flash_message');
     }
 
     public function edit($id)

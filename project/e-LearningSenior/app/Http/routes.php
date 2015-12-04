@@ -2,6 +2,41 @@
 
 /*
 |--------------------------------------------------------------------------
+| Interface Bar
+|--------------------------------------------------------------------------
+|
+| @author: Francisco Maria Calisto
+|
+*/
+
+interface BarInterface
+{
+	
+}
+
+class Bar implements BarInterface
+{
+
+}
+
+App::bind('BarInterface', 'Bar');
+
+// App::bind('BarInterface', function()
+// {
+// 	return new Bar;
+// });
+
+Route::get('bar', function(/*BarInterface $bar*/)
+{
+	// dd($bar);
+	$bar = App::make('BarInterface');
+
+	dd($bar);
+});
+
+
+/*
+|--------------------------------------------------------------------------
 | Application Routes
 |--------------------------------------------------------------------------
 |

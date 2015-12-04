@@ -38,7 +38,10 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title" href="home">Bem vindo!</div>
+                <div class="title">
+                    <h1>Obrigado!</h1>
+                    <a href="/home">Voltar >></a>
+                </div>
             </div>
         </div>
     </body>
