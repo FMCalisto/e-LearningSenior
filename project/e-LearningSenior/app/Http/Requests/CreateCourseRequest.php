@@ -31,9 +31,12 @@ class CreateCourseRequest extends Request
     public function rules()
     {
         return [
+            'owner' => 'required',
+            'class' => 'required',
+            'genre' => 'required',
             'title' => 'required',
             'body' => 'required',
-            'published_at' => 'required',
+            'published_at' => 'required|date',
         ];
     }
 }

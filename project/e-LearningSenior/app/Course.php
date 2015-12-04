@@ -15,12 +15,12 @@ class Course extends Model
 
     protected $dates = ['published_at'];
 
-    public function scopePubliched($query)
+    public function scopePublished($query)
     {
     	// $query->where('published_at', '<=', Carbon::now()); // FIXME
     }
 
-    public function scopeUnpubliched($query)
+    public function scopeUnpublished($query)
     {
     	// $query->where('published_at', '>=', Carbon::now()); // FIXME
     }
@@ -28,6 +28,24 @@ class Course extends Model
     public function setPublishedAttribute($date)
     {
     	$this->attributes['published_at'] = Carbon::parse($date);
+    }
+
+    // Um curso tem um owner
+    // public function owner()
+    // {
+    //     return $this->belongsTo('App\Owner');
+    // }
+
+
+    // Um curso tem varios users
+    public function user()
+    {
+        return $this->belongsToMany('App\User');
+    }
+
+    public function tags()
+    {
+        return $this->belongsToMany('App\Tag');
     }
 
 }

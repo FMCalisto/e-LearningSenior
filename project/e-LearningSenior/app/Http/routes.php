@@ -47,8 +47,14 @@ Route::get('help', 'MenuController@help');
 |
 */
 
-Route::get('courses', 'CoursesController@index');
-Route::get('courses/{id}', 'CoursesController@show');
+// Route::get('courses', 'CoursesController@index');
+// // Route::get('courses/create', 'CoursesController@create');
+// Route::get('courses/{id}', 'CoursesController@show');
+// // Route::get('courses', 'CoursesController@store');
+// // Route::get('courses/{id}'/edit, 'CoursesController@edit');
+
+// Routes optimization
+Route::resource('courses', 'CoursesController');
 
 /*
 |--------------------------------------------------------------------------
@@ -63,3 +69,18 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+
+/*
+|--------------------------------------------------------------------------
+| Tests Routes
+|--------------------------------------------------------------------------
+|
+| @author: Francisco Maria Calisto
+|
+*/
+
+Route::get('testAdmin', ['middleware' => 'admin', function()
+{
+	return 'this page may only be viewed by admins';
+}]);
