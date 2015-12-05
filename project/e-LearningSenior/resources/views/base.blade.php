@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="http://static.tecnico.ulisboa.pt/favicon.png">
 
-    <title>SEPP</title>
+    <title>eSenior</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -19,10 +19,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('/css/modern-business.css') }}">
+
+    <!-- Sidebar CSS -->
+    <link rel="stylesheet" href="{{ asset('/css/simple-sidebar.css') }}">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/font-awesome/css/font-awesome.min.css') }}">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,6 +39,12 @@
 <body>
 
     @include('partitials.nav')
+
+    @if(Request::path() == 'home')
+
+        @include('partitials.carousel')
+
+    @endif
 
     <!-- FIXME -->
 
@@ -51,8 +60,6 @@
         <div id="main" class="row">
 
             @yield('content')
-
-            <br/>
 
         </div>
 

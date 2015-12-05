@@ -117,27 +117,27 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
                 	<li>
-                        <a href="fp-index.html">Inicio</a>
-                    </li>
-                    <li class="active">
-                        <a href="fp-cursos.html">Cursos</a>
+                        <a href="#">Inicio</a>
                     </li>
                     <li>
-                        <a href="fp-perfil.html">Perfil</a>
+                        <a href="#">Cursos</a>
                     </li>
                     <li>
-                        <a href="fp-sobre.html">Sobre</a>
+                        <a href="#">Perfil</a>
                     </li>
                     <li>
-                        <a href="fp-ajuda.html">Ajuda</a>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Ajuda</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="fp-entrar.html">Entrar</a>
+                        <a href="#">Entrar</a>
                     </li>
                     <li>
-                        <a href="fp-registar.html">Registar</a>
+                        <a href="#">Registar</a>
                     </li>
                 </ul>
                 <div class="col-sm-3 col-md-3 pull-right">
@@ -234,7 +234,7 @@
 		<p class="">Standart paragraph. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Standart paragraph. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Standart paragraph. Donec id elit non mi porta gravida at eget metus.</p>
 		<hr>
 		<p class=""><a class="btn btn-block btn-lg btn-success"> Inscrever no Curso </a>
-					<a class="btn btn-block btn-lg btn-warning" href="fp-professor.html"> Contactar o Professor </a></p>
+					<a class="btn btn-block btn-lg btn-warning" href="#"> Contactar o Professor </a></p>
 		  
 		
          
@@ -402,13 +402,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="./js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
 
     <!-- Le javascript
     ================================================== -->
