@@ -10,22 +10,24 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
+
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
-                    <li>
+                    <li class="{{ Request::is('home') ? 'active' : '' }}">
                         <a href="/home">Inicio</a>
                     </li>
-                    <li>
+                    <li class="{{ Request::is('courses') ? 'active' : '' }}">
                         <a href="/courses">Cursos</a>
                     </li>
-                    <li>
+                    <li class="{{ Request::is('profile') ? 'active' : '' }}">
                         <a href="/profile">Perfil</a>
                     </li>
-                    <li>
+                    <li class="{{ Request::is('about') ? 'active' : '' }}">
                         <a href="/about">Sobre</a>
                     </li>
-                    <li>
+                    <li class="{{ Request::is('help') ? 'active' : '' }}">
                         <a href="/help">Ajuda</a>
                     </li>
                 </ul>

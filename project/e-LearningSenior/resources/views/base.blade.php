@@ -48,7 +48,23 @@
     <!-- Page Content -->
     <div class="container">
 
-        @yield('content')
+        <div id="main" class="row">
+
+            @yield('content')
+
+            <br/>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="row" align="center">
+
+            <hr/>
+
+            @include('includes.footer')
+        
+        </footer>
+        <!-- /.Footer -->
 
     </div>
     <!-- /.container -->
