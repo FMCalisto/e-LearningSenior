@@ -15,9 +15,11 @@ class CreateCoursesTable extends Migration
         Schema::create('courses', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('owner_id')->unsigned();
+            // TODO (aka TODEL)
             $table->string('owner_name'); // Teacher, Professor, Learning Center, etc...
-            $table->string('class');
+            $table->integer('class_id');
             $table->string('genre');
+            $table->string('img_src');
             $table->string('title');
             $table->text('body');
             $table->timestamps();
