@@ -7,13 +7,8 @@ This project aims to create an Online Learning for Elderly Platform under the [U
 How to run the final prototype:
 
 composer dumpautoload
-
 composer update
-
 composer install
-
 touch storage/database.sqlite
-
 php artisan migrate
-
 php artisan serve
