@@ -28,14 +28,14 @@ class User extends Model implements AuthenticatableContract,
      *
      * @var array
      */
-    protected $fillable = ['username', 'first_name', 'last_name', 'email', 'password'];
+    protected $fillable = toArray('username', 'first_name', 'last_name', 'email', 'password');
 
     /**
      * The attributes excluded from the model's JSON form.
      *
      * @var array
      */
-    protected $hidden = ['password', 'remember_token'];
+    protected $hidden = toArray('password', 'remember_token');
 
     public function courses()
     {
@@ -46,12 +46,9 @@ class User extends Model implements AuthenticatableContract,
         return true;
     }
 
-    /*
-    public function setPasswordAttribute($password)
-    {
-        $this->attributes['password'] = mycrypt($password);
-    }
-    */
-
+    // public function setPasswordAttribute($password)
+    // {
+    //     $this->attributes['password'] = mycrypt($password);
+    // }
 
 }
