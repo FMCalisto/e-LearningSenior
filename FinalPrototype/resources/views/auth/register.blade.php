@@ -62,6 +62,19 @@
 								<input type="password" class="form-control" name="password_confirmation">
 							</div>
 						</div>
+						
+						<div class="bootstrap-switch-container" style="width: 372px; margin-left: 0px;">
+							<span class="bootstrap-switch-handle-on bootstrap-switch-primary" style="width: 124px;">
+								Aluno
+							</span>
+							<span class="bootstrap-switch-label" style="width: 124px;">
+								&nbsp;
+							</span>
+							<span class="bootstrap-switch-handle-off bootstrap-switch-default" style="width: 124px;">
+								Professor
+							</span>
+							<input id="switch-handleWidth" type="checkbox" data-handle-width="100">
+						</div>
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
