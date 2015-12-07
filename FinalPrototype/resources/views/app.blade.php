@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Blog Demo | Find All Together</title>
+		<title>eSenior</title>
 
 		<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 
@@ -28,7 +28,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="http://www.findalltogether.com">eSenior</a>
+					<a class="navbar-brand" href="/home">eSenior</a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
