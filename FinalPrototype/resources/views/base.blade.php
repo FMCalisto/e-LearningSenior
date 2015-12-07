@@ -27,6 +27,12 @@
     <!-- Custom Fonts -->
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/font-awesome/css/font-awesome.min.css') }}">
 
+    <!-- Card CSS -->
+    <link href="./css/card.css" rel="stylesheet">
+
+    <!-- Video CSS -->
+    <link href="./css/video.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -81,6 +87,9 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Card JS -->
+    <script src="./js/card.js"></script>
 
 </body>
 

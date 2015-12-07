@@ -35,4 +35,9 @@ class MenuController extends Controller
     	return view('menu.help');
     }
 
+    public function course()
+    {
+        return view('menu.course');
+    }
+
 }

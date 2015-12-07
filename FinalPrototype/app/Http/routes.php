@@ -21,6 +21,8 @@ Route::get('about', 'MenuController@about');
 
 Route::get('help', 'MenuController@help');
 
+Route::get('course', 'MenuController@course');
+
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +41,8 @@ Route::get('help', 'MenuController@help');
 
 // Routes optimization
 Route::resource('courses', 'CoursesController');
+
+// Route::get('course', 'CoursesController@course');
 
 /*
 |--------------------------------------------------------------------------

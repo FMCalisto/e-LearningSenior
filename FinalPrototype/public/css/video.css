@@ -1,0 +1,64 @@
+body {
+        padding-top: 50px;
+        padding-bottom: 40px;
+      }
+	.jumbotron{
+		background:#358cce;
+		color:#fff;
+	  }
+	  
+	  footer{
+		maring-top:30px;
+		display:block;
+	  }
+	  .thumbnail{
+		margin-bottom:30px;
+	  }
+	  .thumbnail img{
+		min-width:100%;
+		width:100%;
+	  }
+	  
+	  .nav-tabs{
+		margin-bottom:15px;
+	}
+		/************* VIDEO *******************************/
+
+		.fluid-width-video-wrapper {
+			width: 100%;
+			position: relative;
+			padding: 0;
+		}
+		.vendor {
+			margin-bottom: 0px;
+		}
+
+		.container-video {
+			width: 100%;
+			min-width: 100%;
+			position: relative;
+			padding: 0;
+			height: 100%;
+		}
+
+		.fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border:0px;
+		}
+
+		.video-well.well{
+			-webkit-border-radius:0px;
+				-moz-border-radius:0px;
+					border-radius:0px;
+		}
+		
+		@media (max-width: 768px) {
+
+		.nav-tabs.nav-justified > li{
+			float:left;
+		}
+	}

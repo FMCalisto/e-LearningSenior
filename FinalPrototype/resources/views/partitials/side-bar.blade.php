@@ -13,42 +13,43 @@
         <li>
           <a href="#">
             Todos
-            <span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"> 
+            <span style="font-size:16px;" class="pull-right hidden-xs showopacity">
+            <!-- <span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"> -->
             </span>
           </a>
         </li>
         <li>
           <a href="#">
             Culin&aacute;ria
-            <span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"> 
+            <span style="font-size:16px;" class="pull-right hidden-xs showopacity"> 
             </span>
           </a>
         </li>
         <li>
           <a href="#">
             Finan&ccedil;as
-            <span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"> 
+            <span style="font-size:16px;" class="pull-right hidden-xs showopacity"> 
             </span>
           </a>
         </li>
         <li>
           <a href="#">
             L&iacute;nguas
-            <span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"> 
+            <span style="font-size:16px;" class="pull-right hidden-xs showopacity"> 
             </span>
           </a>
         </li>
         <li>
           <a href="#">
             Sa&uacute;de
-            <span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"> 
+            <span style="font-size:16px;" class="pull-right hidden-xs showopacity"> 
             </span>
           </a>
         </li>
         <li>
           <a href="#">
             Tecnologia
-            <span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"> 
+            <span style="font-size:16px;" class="pull-right hidden-xs showopacity"> 
             </span>
           </a>
         </li>

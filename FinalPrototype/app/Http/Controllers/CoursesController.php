@@ -14,6 +14,11 @@ use Carbon\Carbon;
 class CoursesController extends Controller
 {
 
+    // public function course()
+    // {
+    //     return view('courses.course');
+    // }
+
     // public function __constructor()
     // {
     //     $this->middleware('auth', ['only' => ['create', 'show']], ['except' => ['index', 'show']]);

@@ -17,12 +17,12 @@
     position: relative;
     padding-top: 0;
     overflow: hidden;
-    text-align: center;
+    text-align: left;
     background-color: #fff;
     background-color: rgba(255, 255, 255, 1);
 }
 .card.hovercard .card-background {
-    height: 130px;
+    height: 300px;
 }
 .card-background img {
     -webkit-filter: blur(25px);
@@ -36,26 +36,42 @@
 }
 .card.hovercard .useravatar {
     position: absolute;
+     width: 300px;
+    height: 300px;
     top: 15px;
     left: 0;
     right: 0;
 }
 .card.hovercard .useravatar img {
-    width: 100px;
-    height: 100px;
-    max-width: 100px;
-    max-height: 100px;
+    width: 200px;
+    height: 200px;
+    max-width: 300px;
+    max-height: 300px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
     border: 5px solid rgba(255, 255, 255, 0.5);
 }
+
+
 .card.hovercard .card-info {
     position: absolute;
-    bottom: 14px;
+    bottom: 170px;
     left: 0;
     right: 0;
 }
+
+
+.card.hovercard .card-personal {
+    width: auto;
+    height: 150px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 1);
+    }
+
 .card.hovercard .card-info .card-title {
     padding:0 5px;
     font-size: 20px;

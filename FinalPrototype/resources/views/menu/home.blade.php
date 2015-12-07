@@ -37,7 +37,7 @@
             <img class="img-responsive" src="./img/course3.png" alt="">
         </a>
         <h3>
-            <a href="#">Curso de An&aacute;lise de Mercados</a>
+            <a href="/course">Curso de An&aacute;lise de Mercados</a>
         </h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
     </div>
